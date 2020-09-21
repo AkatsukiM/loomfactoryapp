@@ -1,5 +1,6 @@
 <template>
 	<view class="qiun-columns">
+		qwe
 		<view class="qiun-bg-white qiun-title-bar qiun-common-mt">
 			<view class="qiun-title-dot-light">饼图右侧图例</view>
 		</view>
@@ -23,7 +24,7 @@
 				pixelRatio: 1,
 				serverData: '',
 				piearr: [],
-			}
+
 		},
 		onLoad() {
 			_self = this;

@@ -1,17 +1,16 @@
 <template>
 	<view class="qiun-columns">
 		<view class="qiun-bg-white qiun-title-bar qiun-common-mt">
-			<view class="qiun-title-dot-light">饼图右侧图例</view>
+			<view class="qiun-title-dot-light">基本柱状图</view>
 		</view>
-		<view class="qiun-charts qiun-rows">
-			<canvas canvas-id="canvasPie" id="canvasPie" class="charts-pie" @touchstart="touchPie"></canvas>
+		<view class="qiun-charts">
+			<canvas canvas-id="canvasColumn" id="canvasColumn" class="charts" @touchstart="touchColumn"></canvas>
 		</view>
-
 	</view>
 </template>
 
 <script>
-	import uCharts from '@/components/u-charts/u-charts.js';
+import uCharts from '@/components/u-charts/u-charts.js';
 	var _self;
 	var canvaPie = null;
 
@@ -149,40 +148,9 @@
 		background-color: #FFFFFF;
 	}
 
-	.charts-pie {
+	.charts {
 		width: 750upx;
 		height: 500upx;
 		background-color: #FFFFFF;
-	}
-
-	.charts-right {
-		display: flex;
-		align-items: center;
-		width: 250upx;
-		height: 500upx;
-		background-color: #FFFFFF;
-	}
-
-	.legend-itme {
-		width: 200upx;
-		margin-left: 30upx;
-		height: 50upx;
-		align-items: center;
-	}
-
-	.legend-itme-point {
-		width: 20upx;
-		height: 20upx;
-		margin: 15upx;
-		border: 1px solid #FFFFFF;
-		border-radius: 20upx;
-		background-color: #000000;
-	}
-
-	.legend-itme-text {
-		height: 50upx;
-		line-height: 50upx;
-		color: #666666;
-		font-size: 26upx;
 	}
 </style>

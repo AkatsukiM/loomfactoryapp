@@ -4,11 +4,32 @@
 		"style": {
 			"navigationBarTitleText": "uni-ui基础项目"
 		}
-	}],
+	}, {
+		"path": "pages/zhuzhuang/zhuzhuang",
+		"style": {}
+	}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/image/Dic.png",
+			"selectedIconPath": "static/image/Dic-active.png",
+			"text": "组件"
+		}, {
+			"pagePath": "pages/zhuzhuang/zhuzhuang",
+			"iconPath": "static/image/Block.png",
+			"selectedIconPath": "static/image/Block-active.png",
+			"text": "接口"
+		}]
 	}
 }
